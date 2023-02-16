@@ -8,7 +8,7 @@ const client = new GraphQLClient(endpoint, { headers: {} });
 
 const globalCache = {}
 
-const getContentById = async (id, option = {}) => {
+const getContentById = async (_client, id, option = {}) => {
   try {
     const query = /* GraphQL */ `
       query getContentById {
@@ -21,7 +21,8 @@ const getContentById = async (id, option = {}) => {
         }
       }
     `;
-    const response = await client.request(query);
+    const response = await _client.request(query);
+    if (!response) return { data: response }
     if (option && option.deep && response[0] && response[0].Data) {
       const referenceCache = option.cache || globalCache;
       referenceCache[id] = response[0]
@@ -40,7 +41,7 @@ const getContentById = async (id, option = {}) => {
               if (referenceCache[contentId]) {
                 return referenceCache[contentId];
               } else {
-                const { data } = await getContentById(contentId, {
+                const { data } = await getContentById(_client, contentId, {
                   deep: true,
                   cache: referenceCache,
                 });
@@ -60,5 +61,6 @@ const getContentById = async (id, option = {}) => {
 }
 
 module.exports = {
+  client,
   getContentById
 }

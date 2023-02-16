@@ -10,7 +10,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
     "@fontsource/dm-mono": "^4.5.10",
@@ -40,5 +40,11 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "babel-jest": "^29.4.3",
+    "babel-preset-gatsby": "^3.6.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.4.3"
   }
 }
