@@ -3,13 +3,13 @@ import * as React from "react"
 export default function GatsbyContentfulLogo() {
   return (
     <svg
-      width="82"
+      width="24"
       height="24"
-      viewBox="0 0 82 24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
+      {/* <path
         d="M13.083 0C6.48301 0 1.08301 5.4 1.08301 12C1.08301 18.6 6.48301 24 13.083 24C19.683 24 25.083 18.6 25.083 12C25.083 5.4 19.683 0 13.083 0ZM6.39729 18.6857C4.59729 16.8857 3.65444 14.4857 3.65444 12.1714L12.9973 21.4286C10.5973 21.3429 8.19729 20.4857 6.39729 18.6857ZM15.1402 21.1714L3.91158 9.94286C4.85444 5.74286 8.62587 2.57143 13.083 2.57143C16.2544 2.57143 18.9973 4.11429 20.7116 6.42857L19.4259 7.54286C17.9687 5.57143 15.6544 4.28571 13.083 4.28571C9.74015 4.28571 6.91158 6.42857 5.79729 9.42857L15.6544 19.2857C18.1402 18.4286 20.0259 16.2857 20.6259 13.7143H16.5116V12H22.5116C22.5116 16.4571 19.3402 20.2286 15.1402 21.1714Z"
         fill="currentColor"
       />
@@ -18,13 +18,11 @@ export default function GatsbyContentfulLogo() {
         fill="currentColor"
         stroke="currentColor"
         strokeWidth="0.5"
-      />
-      <svg x="58" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      /> */}
         <rect width="24" height="24" fill="none"/>
         <rect x="6.60641" y="1.91061" width="20.0157" height="4.54909" rx="2.27454" transform="rotate(90 6.60641 1.91061)" stroke="currentColor" stroke-width="2"/>
         <rect x="-0.0210569" y="1.04666" width="26.3673" height="4.57783" rx="2.28891" transform="matrix(0.701996 0.712181 -0.730072 0.683371 5.19512 0.346401)" stroke="currentColor" stroke-width="2"/>
         <path d="M22.939 4.10797C22.939 5.30338 21.939 6.30533 20.6644 6.30533C19.3898 6.30533 18.3899 5.30338 18.3899 4.10797C18.3899 2.91256 19.3898 1.91061 20.6644 1.91061C21.939 1.91061 22.939 2.91256 22.939 4.10797Z" stroke="currentColor" stroke-width="2"/>
-      </svg>
     </svg>
   )
 }
