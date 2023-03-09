@@ -12,7 +12,6 @@ import {
 } from "./ui"
 
 export default function Hero(props) {
-  console.log('props Hero', props.image.MediaUrl)
   return (
     <Section>
       <Container>

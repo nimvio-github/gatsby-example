@@ -68,7 +68,6 @@ const getSocialName = ({ service }) => {
 }
 
 export default function Footer({ sliceContext: { data } }) {
-  console.log('footer Data', data.Data)
   const { links, meta, socialLinks, copyright } = data.Data
 
   return (

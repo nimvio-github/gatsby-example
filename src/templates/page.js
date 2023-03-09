@@ -10,7 +10,6 @@ export default function Homepage({ pageContext: { data } }) {
     const sectionType = templateName.replaceAll(" ", "")
     return sections[sectionType]
   }
-  console.log('homepage', Data)
 
   return (
     <Layout>

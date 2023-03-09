@@ -24,7 +24,6 @@ import BrandLogo from "./brand-logo"
 export default function Header({ sliceContext: { data } }) {
   const { navItems, cta } = data.Data
   const ctaData = cta.length ? cta[0] : undefined
-  console.log('header', data.Data)
   const [isOpen, setOpen] = React.useState(false)
 
   React.useEffect(() => {
